@@ -16,7 +16,12 @@ export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={outfit.className}>{children}</body>
+        <body className={outfit.className}>
+<provider>
+{children}
+</provider>
+
+</body>
       </html>
     </ClerkProvider>
   );
